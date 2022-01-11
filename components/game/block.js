@@ -466,7 +466,7 @@ function initBlockArray(blockArray) {
 function moveToBottomOneLine(blockArray) {
   for (let x = 0; x < widthBlockCount + outBorderBlockCount * 2; x++) {
     for (let y = heightBlockCount + outBorderBlockCount - 1; y != 0; y--) {
-      copySingleBlockWithPrev(blockArray[x][y], blockArray[x][y - 1], blockArray[x][y].isExist);
+      copySingleBlockWithPrev(blockArray[x][y], blockArray[x][y - 1], blockArray[x][y].isExist); 
     }
     blockArray[x][0].isExist = false;
   }
